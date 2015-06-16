@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--Criar um script que leia nome, sexo e idade de uma pessoa. Após isso, informar em qual grupo a pessoa se encaixa:
+•	Homem com + de 30 anos
+•	Mulher com - de 25 anos
+•	Homem entre 20 e 30 anos
+•	Mulher com - de 20 ou + de 50 anos
+•	Homem com + de 40 ou Mulher com + de 35 anos-->
+
+<html>
+    <head>
+        <title>Projeto Edson</title>
+        
+    </body>
+</html>
+
+
+<script type="text/javascript"> 
+
+
+var nome 
+var idade 
+var salario
+var sexo 
+var estcivil 
+
+var nome=(prompt("Digite seu nome " , "")) 
+var idade=parseInt(prompt("Digite sua idade " , "")) 
+var salario=parseFloat(prompt("Digite seu salário " , "")) 
+var sexo=(prompt("Digite o sexo 'M' ou 'F' " , "")) 
+var estcivil=(prompt("Digite seu estado civil 'S','C','V', 'U', 'D' " , "")) 
+
+if (nome.length <= 3) 
+document.write("Nome inválido!") 
+
+else 
+if (idade < 0 || idade > 150) 
+document.write("Idade inválida!") 
+
+else 
+if (salario < 0 ) 
+document.write("salario inválido!") 
+
+else 
+if ((sexo != 'M' || sexo != 'm') || (sexo != 'f' || sexo !='F')) 
+document.write("Sexo inválido!") 
+
+else 
+if (estcivil != 's' || estcivil != 'S' || estcivil != 'c' || estcivil !='C' || estcivil != 'v' || estcivil != 'V' 
+|| estcivil != 'd' || estcivil != 'D' || estcivil != 'u' || estcivil != 'U') 
+document.write("Estado Civil Inválido") 
+
+else 
+document.write("Erro") 
+
+document.write("<br>"+"Nome = " + nome + "<br>") 
+document.write("Idade = " + idade + "<br>") 
+document.write("Salário = " +salario + "<br>") 
+document.write("Sexo = " + sexo + "<br>") 
+document.write("Estado civil = " + estcivil) 
+
+
+</script> 
+</body> 
+</html> 
